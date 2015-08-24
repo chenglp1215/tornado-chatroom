@@ -10,7 +10,7 @@ import tornado.web
 import tornado.websocket
 from setting import TORNADO_SETTINGS
 
-define("port", default=8999, help="run on the given port", type=int)
+define("port", default=8000, help="run on the given port", type=int)
 
 def send_message(message):
 	for handler in ChatSocketHandler.socket_handlers:
