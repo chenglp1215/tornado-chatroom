@@ -77,7 +77,7 @@ def main():
 	tornado.options.parse_command_line()
 	application = Application()
 	http_server = tornado.httpserver.HTTPServer(application)
-	http_server.bind(options.port, address="192.168.1.102")
+	http_server.bind(options.port)
 	http_server.start()
 	tornado.ioloop.IOLoop.instance().start()
 
